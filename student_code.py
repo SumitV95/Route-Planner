@@ -46,7 +46,7 @@ def graph_search(M,start,goal):
     while bool(frontier) == True:
         if bool(frontier) == False:
             return False
-            break
+            
         key_min = min(frontier.keys(),key=(lambda k: frontier[k]))
         explored.add(key_min)
         value=frontier[key_min]
